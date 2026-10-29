@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 290" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="290" rx="16" fill="#ffffff"/>
+  <text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Start on the watch / Memulai di jam</text>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9ca3af"/></marker></defs>
+  <g text-anchor="middle">
+    <g transform="translate(120 140)">
+      <circle r="80" fill="#1f2937"/><circle r="70" fill="#000"/>
+      <text y="-30" font-size="11" fill="#9ca3af">Exercise</text>
+      <text y="-6" font-size="13" fill="#6b7280">Running</text>
+      <rect x="-52" y="2" width="104" height="24" rx="12" fill="#ea580c"/><text y="19" font-size="14" fill="#fff" font-weight="700">Kiblat</text>
+      <text y="44" font-size="13" fill="#6b7280">Walking</text>
+    </g>
+    <text x="120" y="248" font-size="14" font-weight="700" fill="#111827">1. Choose sport mode</text>
+    <text x="120" y="268" font-size="12" fill="#6b7280">Pilih mode “Kiblat” (atau mode lain)</text>
+    <g transform="translate(360 140)">
+      <circle r="80" fill="#1f2937"/><circle r="70" fill="#000"/>
+      <text y="-30" font-size="11" fill="#9ca3af">Options</text>
+      <text y="-6" font-size="13" fill="#6b7280">Navigation</text>
+      <rect x="-56" y="2" width="112" height="24" rx="12" fill="#2563eb"/><text y="19" font-size="14" fill="#fff" font-weight="700">SuuntoPlus</text>
+      <text y="44" font-size="13" fill="#6b7280">Battery</text>
+    </g>
+    <text x="360" y="248" font-size="14" font-weight="700" fill="#111827">2. Open options → SuuntoPlus</text>
+    <text x="360" y="268" font-size="12" fill="#6b7280">Buka opsi sebelum mulai → SuuntoPlus</text>
+    <g transform="translate(600 140)">
+      <circle r="80" fill="#1f2937"/><circle r="70" fill="#000"/>
+      <text y="-30" font-size="11" fill="#9ca3af">SuuntoPlus</text>
+      <text y="-6" font-size="13" fill="#6b7280">None</text>
+      <rect x="-62" y="2" width="124" height="24" rx="12" fill="#059669"/><text y="19" font-size="13" fill="#fff" font-weight="700">Qibla Compass</text>
+    </g>
+    <text x="600" y="248" font-size="14" font-weight="700" fill="#111827">3. Select Qibla Compass</text>
+    <text x="600" y="268" font-size="12" fill="#6b7280">Pilih Qibla Compass</text>
+    <g transform="translate(840 140)">
+      <circle r="80" fill="#1f2937"/><circle r="70" fill="#000"/>
+      <text y="-24" font-size="16" fill="#9ca3af">GPS</text>
+      <text y="4" font-size="22" fill="#fff" font-weight="700">100%</text>
+      <rect x="-40" y="20" width="80" height="24" rx="12" fill="#ea580c"/><text y="37" font-size="13" fill="#fff" font-weight="700">Start</text>
+    </g>
+    <text x="840" y="248" font-size="14" font-weight="700" fill="#111827">4. Wait for GPS, Start</text>
+    <text x="840" y="268" font-size="12" fill="#6b7280">Tunggu GPS siap, lalu Mulai</text>
+  </g>
+  <g stroke="#9ca3af" stroke-width="2" marker-end="url(#ar)">
+    <line x1="204" y1="140" x2="274" y2="140"/><line x1="444" y1="140" x2="514" y2="140"/><line x1="684" y1="140" x2="754" y2="140"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="330" rx="16" fill="#ffffff"/>
+  <text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Bluetooth pairing order (PC ↔ watch) / Urutan pairing Bluetooth</text>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9ca3af"/></marker></defs>
+  <g font-size="13" fill="#374151">
+    <!-- A -->
+    <rect x="20" y="56" width="214" height="214" rx="12" fill="#f3f4f6" stroke="#e5e7eb"/>
+    <circle cx="44" cy="80" r="14" fill="#111827"/><text x="44" y="85" text-anchor="middle" fill="#fff" font-weight="700">A</text>
+    <text x="66" y="85" font-weight="700" fill="#111827">Windows Settings</text>
+    <rect x="36" y="102" width="182" height="48" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+    <text x="48" y="122" fill="#111827">Suunto Race S</text><text x="48" y="140" font-size="11" fill="#6b7280">Paired</text>
+    <rect x="148" y="114" width="60" height="24" rx="4" fill="#fee2e2"/><text x="178" y="131" text-anchor="middle" font-size="11" fill="#b91c1c" font-weight="700">Remove</text>
+    <text x="36" y="182">Remove the watch from</text><text x="36" y="200">Bluetooth &amp; devices if it</text><text x="36" y="218">is already listed.</text>
+    <text x="36" y="248" font-size="12" fill="#6b7280">Hapus jam dari daftar</text><text x="36" y="264" font-size="12" fill="#6b7280">Bluetooth Windows.</text>
+    <!-- B -->
+    <rect x="254" y="56" width="214" height="214" rx="12" fill="#f3f4f6" stroke="#e5e7eb"/>
+    <circle cx="278" cy="80" r="14" fill="#111827"/><text x="278" y="85" text-anchor="middle" fill="#fff" font-weight="700">B</text>
+    <text x="300" y="85" font-weight="700" fill="#111827">VS Code</text>
+    <rect x="270" y="102" width="182" height="48" rx="6" fill="#252526"/>
+    <text x="280" y="122" font-size="11" fill="#fff">▾ SUUNTO WATCH</text>
+    <text x="436" y="122" font-size="14" fill="#fff" text-anchor="end">⟳</text>
+    <circle cx="430" cy="117" r="11" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <text x="280" y="140" font-size="11" fill="#9ca3af">Searching…</text>
+    <text x="270" y="182">Click Refresh in the</text><text x="270" y="200">SUUNTO WATCH panel</text><text x="270" y="218" font-weight="700">once.</text>
+    <text x="270" y="248" font-size="12" fill="#6b7280">Klik Refresh satu kali</text><text x="270" y="264" font-size="12" fill="#6b7280">di panel SUUNTO WATCH.</text>
+    <!-- C -->
+    <rect x="488" y="56" width="214" height="214" rx="12" fill="#f3f4f6" stroke="#e5e7eb"/>
+    <circle cx="512" cy="80" r="14" fill="#111827"/><text x="512" y="85" text-anchor="middle" fill="#fff" font-weight="700">C</text>
+    <text x="534" y="85" font-weight="700" fill="#111827">Windows</text>
+    <rect x="504" y="102" width="182" height="48" rx="6" fill="#ffffff" stroke="#d1d5db"/>
+    <text x="516" y="122" fill="#111827">Add a device</text><text x="516" y="140" font-size="11" fill="#2563eb">Suunto Race S → Pair</text>
+    <text x="504" y="182">Pair the watch in Windows.</text><text x="504" y="200">Confirm the code on the</text><text x="504" y="218">watch if asked.</text>
+    <text x="504" y="248" font-size="12" fill="#6b7280">Pasangkan jam di Windows,</text><text x="504" y="264" font-size="12" fill="#6b7280">setujui kode di jam bila diminta.</text>
+    <!-- D -->
+    <rect x="722" y="56" width="218" height="214" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <circle cx="746" cy="80" r="14" fill="#059669"/><text x="746" y="85" text-anchor="middle" fill="#fff" font-weight="700">D</text>
+    <text x="768" y="85" font-weight="700" fill="#065f46">Wait</text>
+    <rect x="738" y="102" width="186" height="48" rx="6" fill="#252526"/>
+    <text x="748" y="122" font-size="11" fill="#fff">▾ SUUNTO WATCH</text>
+    <text x="748" y="140" font-size="11" fill="#4ade80">● Connected Suunto watch</text>
+    <text x="738" y="182">Touch nothing until</text><text x="738" y="200">“Connected Suunto watch”</text><text x="738" y="218">appears.</text>
+    <text x="738" y="248" font-size="12" fill="#6b7280">Jangan sentuh apa pun sampai</text><text x="738" y="264" font-size="12" fill="#6b7280">muncul “Connected Suunto watch”.</text>
+  </g>
+  <g stroke="#9ca3af" stroke-width="2" marker-end="url(#ar)">
+    <line x1="235" y1="163" x2="252" y2="163"/><line x1="469" y1="163" x2="486" y2="163"/><line x1="703" y1="163" x2="720" y2="163"/>
+  </g>
+  <rect x="20" y="284" width="920" height="32" rx="8" fill="#fef2f2"/>
+  <text x="480" y="305" text-anchor="middle" font-size="13" fill="#b91c1c" font-weight="700">Never click Refresh again while it is connecting. / Jangan klik Refresh lagi selama proses menyambung.</text>
+</svg>

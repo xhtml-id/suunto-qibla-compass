@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="300" rx="16" fill="#ffffff"/>
+  <text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#b91c1c">Connecting the watch to the phone removes the app</text>
+  <text x="480" y="56" text-anchor="middle" font-size="14" fill="#6b7280">Menyambungkan jam ke HP (aplikasi Suunto) membuat Qibla Compass terhapus dari jam</text>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9ca3af"/></marker></defs>
+  <g text-anchor="middle" font-size="13" fill="#374151">
+    <!-- installed -->
+    <g transform="translate(120 150)"><circle r="56" fill="#1f2937"/><circle r="48" fill="#000"/><path d="M0 -28 12 12 0 5 -12 12Z" fill="#22c55e"/></g>
+    <text x="120" y="232" font-weight="700" fill="#111827">Installed from PC</text>
+    <text x="120" y="250" fill="#6b7280">Terpasang dari VS Code</text>
+    <!-- phone sync -->
+    <g transform="translate(360 150)">
+      <rect x="-30" y="-56" width="60" height="112" rx="10" fill="#1f2937"/><rect x="-24" y="-46" width="48" height="90" rx="4" fill="#e5e7eb"/>
+      <path d="M-10 -8a14 14 0 0 1 24 -6M14 -14v-9M14 -14h-9" stroke="#2563eb" stroke-width="3" fill="none"/>
+      <path d="M10 8a14 14 0 0 1 -24 6M-14 14v9M-14 14h9" stroke="#2563eb" stroke-width="3" fill="none"/>
+    </g>
+    <text x="360" y="232" font-weight="700" fill="#111827">Watch pairs / syncs</text>
+    <text x="360" y="250" fill="#6b7280">Jam tersambung &amp; sinkron ke HP</text>
+    <text x="360" y="268" fill="#6b7280">(juga lewat SuuntoLink di PC)</text>
+    <!-- removed -->
+    <g transform="translate(600 150)"><circle r="56" fill="#1f2937"/><circle r="48" fill="#000"/>
+      <path d="M-20 -20 20 20M20 -20 -20 20" stroke="#ef4444" stroke-width="6" stroke-linecap="round"/></g>
+    <text x="600" y="232" font-weight="700" fill="#b91c1c">App removed</text>
+    <text x="600" y="250" fill="#6b7280">Aplikasi hilang dari jam</text>
+    <!-- reinstall -->
+    <g transform="translate(840 150)"><rect x="-56" y="-34" width="112" height="68" rx="8" fill="#059669"/>
+      <text y="-6" fill="#fff" font-weight="700">Build and Add</text><text y="14" fill="#fff" font-weight="700">App to Watch</text></g>
+    <text x="840" y="232" font-weight="700" fill="#111827">Install again</text>
+    <text x="840" y="250" fill="#6b7280">Pasang ulang dari PC</text>
+  </g>
+  <g stroke="#9ca3af" stroke-width="2" marker-end="url(#ar)">
+    <line x1="180" y1="150" x2="320" y2="150"/><line x1="394" y1="150" x2="540" y2="150"/><line x1="660" y1="150" x2="780" y2="150"/>
+  </g>
+</svg>

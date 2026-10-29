@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="380" rx="16" fill="#ffffff"/>
+  <text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">Arah kiblat dari Indonesia / Qibla direction from Indonesia</text>
+  <!-- compass rose centred at 230,205 r=130 -->
+  <g transform="translate(230 205)">
+    <circle r="130" fill="#f9fafb" stroke="#d1d5db" stroke-width="2"/>
+    <g stroke="#d1d5db"><line y1="-130" y2="130"/><line x1="-130" x2="130"/></g>
+    <g font-size="15" font-weight="700" text-anchor="middle">
+      <text y="-140" fill="#dc2626">U / N 0°</text><text y="156" fill="#374151">S / 180°</text>
+      <text x="166" y="5" fill="#374151">T / E 90°</text><text x="-172" y="5" fill="#374151">B / W 270°</text>
+    </g>
+    <!-- arc from W (270) to 295 -->
+    <path d="M-80 0 A80 80 0 0 1 -72.5 -33.8" fill="none" stroke="#f59e0b" stroke-width="4"/>
+    <text x="-62" y="-6" font-size="13" fill="#b45309" font-weight="700">±25°</text>
+    <!-- qibla arrow at 295 deg: dx = sin(295)=-0.906, dy=-cos(295)=-0.423 -->
+    <line x1="0" y1="0" x2="-114" y2="-53" stroke="#16a34a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-126 -59 -103 -62 -110 -45Z" fill="#16a34a"/>
+    <circle r="7" fill="#111827"/>
+    <!-- arc from N clockwise to 295 (dashed) -->
+    <path d="M0 -105 A105 105 0 1 1 -95.2 -44.4" fill="none" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5 5"/>
+    <text x="78" y="88" font-size="12" fill="#6b7280">diukur searah jarum jam</text>
+    <text x="78" y="104" font-size="12" fill="#6b7280">dari utara sejati</text>
+  </g>
+  <text x="140" y="140" font-size="15" font-weight="700" fill="#16a34a">KIBLAT ±295°</text>
+  <!-- text right -->
+  <g font-size="15" fill="#374151">
+    <text x="470" y="88" font-weight="700" fill="#111827">Kiblat dari Indonesia BUKAN tepat ke barat (270°).</text>
+    <text x="470" y="116">Arahnya barat agak ke utara (barat laut):</text>
+    <text x="470" y="144">sekitar <tspan font-weight="700">291°–296°</tspan> dari utara, tergantung kota.</text>
+    <rect x="470" y="166" width="450" height="128" rx="10" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <text x="488" y="194" font-weight="700" fill="#166534">Contoh (dihitung dengan rumus di main.js)</text>
+    <text x="488" y="222">Banda Aceh  292,2°   ·   Jakarta  295,2°</text>
+    <text x="488" y="248">Serang  295,3°   ·   Surabaya  294,0°</text>
+    <text x="488" y="274">Makassar  292,5°   ·   Jayapura  291,3°</text>
+    <text x="470" y="326" font-size="13" fill="#6b7280">Selisih 1° di Indonesia ≈ meleset ±138 km di Makkah (jarak ±7.900 km).</text>
+    <text x="470" y="348" font-size="13" fill="#6b7280">Karena itu jam memakai GPS, bukan satu angka tetap untuk seluruh Indonesia.</text>
+  </g>
+</svg>

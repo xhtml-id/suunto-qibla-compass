@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="260" rx="16" fill="#ffffff"/>
+  <text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#111827">On the watch / Di jam: forget the phone pairing</text>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#9ca3af"/></marker></defs>
+  <g font-size="15" text-anchor="middle">
+    <g transform="translate(100 140)">
+      <circle r="78" fill="#1f2937"/><circle r="68" fill="#000"/>
+      <text y="-22" fill="#9ca3af" font-size="12">Menu</text><text y="6" fill="#fff" font-weight="700">Settings</text><text y="32" fill="#6b7280" font-size="12">Pengaturan</text>
+    </g>
+    <g transform="translate(290 140)">
+      <circle r="78" fill="#1f2937"/><circle r="68" fill="#000"/>
+      <text y="-22" fill="#9ca3af" font-size="12">Settings</text><text y="6" fill="#fff" font-weight="700">Connectivity</text><text y="32" fill="#6b7280" font-size="12">Konektivitas</text>
+    </g>
+    <g transform="translate(480 140)">
+      <circle r="78" fill="#1f2937"/><circle r="68" fill="#000"/>
+      <text y="-22" fill="#9ca3af" font-size="12">Connectivity</text><text y="6" fill="#fff" font-weight="700">Paired devices</text><text y="32" fill="#6b7280" font-size="12">Perangkat</text>
+    </g>
+    <g transform="translate(670 140)">
+      <circle r="78" fill="#1f2937"/><circle r="68" fill="#000"/>
+      <text y="-22" fill="#9ca3af" font-size="12">Paired devices</text><text y="6" fill="#fff" font-weight="700">MobileApp</text><text y="32" fill="#6b7280" font-size="12">(your phone)</text>
+    </g>
+    <g transform="translate(860 140)">
+      <circle r="78" fill="#1f2937"/><circle r="68" fill="#000"/>
+      <text y="-22" fill="#9ca3af" font-size="12">MobileApp</text><text y="8" fill="#f87171" font-weight="700" font-size="20">Forget</text><text y="32" fill="#6b7280" font-size="12">Lupakan</text>
+    </g>
+  </g>
+  <g stroke="#9ca3af" stroke-width="2" marker-end="url(#ar)">
+    <line x1="180" y1="140" x2="210" y2="140"/><line x1="370" y1="140" x2="400" y2="140"/>
+    <line x1="560" y1="140" x2="590" y2="140"/><line x1="750" y1="140" x2="780" y2="140"/>
+  </g>
+  <text x="480" y="244" text-anchor="middle" font-size="12" fill="#6b7280">Illustration. Labels on your watch may differ slightly by firmware version. / Ilustrasi, label di jam bisa sedikit berbeda.</text>
+</svg>
