@@ -146,6 +146,10 @@ The calculation is covered by tests and the app works on the developer's Race S.
 node tests/test-qibla.js
 ```
 
+## Contributing
+
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) (English & Bahasa Indonesia).
+
 ## License
 
 [MIT](LICENSE) © [xhtml.id](https://xhtml.id) - October 29, 2026
