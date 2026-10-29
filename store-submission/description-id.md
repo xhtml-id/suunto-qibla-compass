@@ -44,7 +44,4 @@ Navigasi / Utilitas
 Suunto Race S (sudah diuji). Aplikasi memakai tata letak layar yang sama dengan Suunto Race, Race 2, Ocean, Ocean Lite, dan Vertical 2, tetapi baru diuji di Race S.
 
 ## Pembuat
-xhtml.id — https://about.xhtml.id
-
-## Situs web
-https://qibla.xhtml.id/
+xhtml.id — https://qibla.xhtml.id/

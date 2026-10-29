@@ -129,7 +129,7 @@ The step illustrations are drawings, not screenshots. Labels on your watch or in
 - `about.html` — About screen
 - `id.json`, `en.json` — localization
 - `arrow.png` — arrow artwork reference (on the watch the arrow is drawn on canvas in `qibla.html`)
-- `qr.png` — QR code for https://about.xhtml.id on the About screen
+- `qr.png` — QR code for https://qibla.xhtml.id/ on the About screen
 - `tests/test-qibla.js` — calculation and vibration-latch tests
 - `tools/hitung-kiblat.js` — prints the Qibla bearing for any coordinate, using the watch formula
 - `docs/` — Indonesian Qibla coordinate guide and step illustrations

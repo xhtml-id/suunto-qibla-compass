@@ -19,7 +19,7 @@ Qibla Compass is a SuuntoPlus sports app made by xhtml.id.
 Your workout, including the GPS track of the exercise during which you used the app, is recorded and synced by the Suunto watch and the Suunto app according to Suunto's own privacy policy. Qibla Compass does not add anything to that data.
 
 **Contact**
-https://about.xhtml.id
+https://qibla.xhtml.id/
 
 ## Bahasa Indonesia
 
@@ -38,4 +38,4 @@ Qibla Compass adalah aplikasi olahraga SuuntoPlus buatan xhtml.id.
 Latihan Anda, termasuk jalur GPS latihan saat aplikasi dipakai, direkam dan disinkronkan oleh jam dan aplikasi Suunto sesuai kebijakan privasi Suunto sendiri. Qibla Compass tidak menambahkan apa pun ke data tersebut.
 
 **Kontak**
-https://about.xhtml.id
+https://qibla.xhtml.id/

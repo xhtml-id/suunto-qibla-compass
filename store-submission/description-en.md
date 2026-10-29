@@ -44,7 +44,4 @@ Navigation / Utility
 Suunto Race S (tested). The app uses the display layout shared by Suunto Race, Race 2, Ocean, Ocean Lite and Vertical 2, but it has only been tested on Race S.
 
 ## Developer
-xhtml.id — https://about.xhtml.id
-
-## Website
-https://qibla.xhtml.id/
+xhtml.id — https://qibla.xhtml.id/
