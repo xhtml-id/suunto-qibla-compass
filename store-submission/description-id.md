@@ -45,3 +45,6 @@ Suunto Race S (sudah diuji). Aplikasi memakai tata letak layar yang sama dengan 
 
 ## Pembuat
 xhtml.id — https://about.xhtml.id
+
+## Situs web
+https://qibla.xhtml.id/

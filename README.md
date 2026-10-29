@@ -2,6 +2,8 @@
 
 Qibla Compass is a SuuntoPlus Sports App that calculates the Qibla bearing from the watch GPS position and rotates an on-screen arrow using the Race S compass heading. It works offline after GPS lock.
 
+🌐 **Website:** https://qibla.xhtml.id/
+
 > **Compatibility disclaimer.** Qibla Compass has been tested and runs well on the **Suunto Race S**. It has **not been tried on any other Suunto watch** (Race, Vertical, 9 Peak Pro, Ocean, and others). SuuntoPlus Editor can build packages for other display sizes, but GPS, compass and screen behaviour on those models is unverified. Using it on other models is at your own risk.
 
 🇮🇩 **Panduan Bahasa Indonesia:** [PANDUAN-INSTALASI.md](PANDUAN-INSTALASI.md) · [Koordinat Ka'bah & cara mengecek arah kiblat](docs/KOORDINAT-KIBLAT.md)
