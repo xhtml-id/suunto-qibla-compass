@@ -14,3 +14,6 @@ store-submission/email-to-suunto.md
 # OS
 Thumbs.db
 .DS_Store
+
+# Claude Code local preview config
+.claude/
