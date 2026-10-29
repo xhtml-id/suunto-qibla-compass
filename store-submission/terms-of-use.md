@@ -11,7 +11,7 @@ Last updated: 25 September 2026
 5. **Limitation of liability.** To the extent permitted by law, xhtml.id is not liable for any loss or damage resulting from the use of the app.
 6. **Suunto.** The app runs on Suunto watches and is distributed through the SuuntoPlus Store. Suunto's own terms apply to the watch, the Suunto app and the store.
 7. **Changes.** These terms may be updated with new versions of the app.
-8. **Contact.** https://about.xhtml.id
+8. **Contact.** https://qibla.xhtml.id/
 
 ## Bahasa Indonesia
 
@@ -22,4 +22,4 @@ Last updated: 25 September 2026
 5. **Batasan tanggung jawab.** Sejauh diizinkan hukum, xhtml.id tidak bertanggung jawab atas kerugian yang timbul dari penggunaan aplikasi.
 6. **Suunto.** Aplikasi berjalan di jam Suunto dan didistribusikan lewat SuuntoPlus Store. Ketentuan Suunto sendiri berlaku untuk jam, aplikasi Suunto, dan store.
 7. **Perubahan.** Ketentuan ini dapat diperbarui bersama versi baru aplikasi.
-8. **Kontak.** https://about.xhtml.id
+8. **Kontak.** https://qibla.xhtml.id/
