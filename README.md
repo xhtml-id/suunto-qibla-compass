@@ -148,4 +148,4 @@ node tests/test-qibla.js
 
 ## License
 
-[MIT](LICENSE) © xhtml.id - October 29, 2026
+[MIT](LICENSE) © [xhtml.id](https://xhtml.id) - October 29, 2026
