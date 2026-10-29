@@ -45,3 +45,6 @@ Suunto Race S (tested). The app uses the display layout shared by Suunto Race, R
 
 ## Developer
 xhtml.id — https://about.xhtml.id
+
+## Website
+https://qibla.xhtml.id/

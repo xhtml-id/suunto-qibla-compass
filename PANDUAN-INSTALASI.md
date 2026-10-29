@@ -1,5 +1,7 @@
 # Panduan Instalasi Qibla Compass — Suunto Race S
 
+🌐 **Website:** https://qibla.xhtml.id/
+
 > **Disclaimer kompatibilitas.** Qibla Compass sudah diuji dan berjalan baik di **Suunto Race S**. Aplikasi ini **belum pernah dicoba di jam Suunto jenis lain** (Race, Vertical, 9 Peak Pro, Ocean, dan lainnya). SuuntoPlus Editor bisa membuat paket untuk ukuran layar lain, tetapi perilaku GPS, kompas, dan tampilannya di model tersebut belum terverifikasi. Pemakaian di model lain menjadi risiko pengguna.
 
 ![Urutan pemasangan](docs/images/1-overview.svg)
