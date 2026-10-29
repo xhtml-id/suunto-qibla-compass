@@ -1,0 +1,16 @@
+# Build output from SuuntoPlus Editor (attach to GitHub Releases instead)
+*.fea
+*.zip
+build/
+
+# Local tooling
+.playwright-mcp/
+.vscode/
+node_modules/
+
+# Private drafts
+store-submission/email-to-suunto.md
+
+# OS
+Thumbs.db
+.DS_Store

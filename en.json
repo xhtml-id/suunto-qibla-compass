@@ -1,0 +1,15 @@
+{
+  "appName": "QIBLA",
+  "statusGps": "GPS",
+  "statusCompass": "COMPASS",
+  "holdLevel": "HOLD WATCH LEVEL",
+  "goOutside": "MOVE TO OPEN SKY",
+  "calibrate": "MOVE IN FIGURE 8",
+  "turnLeft": "TURN LEFT",
+  "turnRight": "TURN RIGHT",
+  "aligned": "QIBLA ALIGNED",
+  "aboutTitle": "ABOUT",
+  "versionLabel": "VERSION",
+  "authorLabel": "MADE BY",
+  "kaabaLabel": "KAABA REFERENCE"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Ikon Ka'bah isometrik hitam dan kuning</title>
+  <desc id="desc">Ikon vektor minimalis Ka'bah dalam perspektif isometrik. Pintu berada di sisi kiri fasad.</desc>
+
+  <!-- Siluet Ka'bah: warna pertama, hitam -->
+  <path fill="#050505" d="M512 105 875 303v420L512 921 149 723V303L512 105Z"/>
+
+  <!-- Sabuk kiswah: warna kedua, kuning -->
+  <path fill="#FFC400" d="m149 365 363 198v58L149 423v-58Z"/>
+  <path fill="#FFC400" d="m512 563 363-198v58L512 621v-58Z"/>
+
+  <!-- Panel-panel dekoratif minimal pada sisi kiri -->
+  <path fill="#FFC400" d="m187 456 105 57v35l-105-57v-35Zm138 75 128 70v35l-128-70v-35Z"/>
+  <path fill="#FFC400" d="m300 536 16 9v28l-16-9-16-28 16-10Z"/>
+
+  <!-- Panel-panel dekoratif minimal pada sisi kanan -->
+  <path fill="#FFC400" d="m571 601 128-70v35l-128 70v-35Zm161-88 105-57v35l-105 57v-35Z"/>
+  <path fill="#FFC400" d="m724 545 16-9 16 10-16 28-16 9v-38Z"/>
+
+  <!-- Pintu: ditempatkan di bagian kiri fasad, mengikuti bidang isometrik -->
+  <path fill="#FFC400" d="m205 555 96 52v166l-96-52V555Z"/>
+  <path fill="#050505" d="m249 579 8 4v166l-8-4V579Z"/>
+  <path fill="#050505" d="m205 593 96 52v10l-96-52v-10Z"/>
+  <path fill="#050505" d="m230 664 9 5v13l-9-5v-13Zm41 23 9 5v13l-9-5v-13Z"/>
+
+  <!-- Detail garis atap minimal -->
+  <path fill="#FFC400" d="m512 105 363 198-12 7-351-191-351 191-12-7 363-198Z"/>
+</svg>

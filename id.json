@@ -1,0 +1,15 @@
+{
+  "appName": "KIBLAT",
+  "statusGps": "GPS",
+  "statusCompass": "KOMPAS",
+  "holdLevel": "POSISIKAN JAM DATAR",
+  "goOutside": "CARI AREA TERBUKA",
+  "calibrate": "GERAKKAN ANGKA 8",
+  "turnLeft": "PUTAR KE KIRI",
+  "turnRight": "PUTAR KE KANAN",
+  "aligned": "ARAH KIBLAT TEPAT",
+  "aboutTitle": "TENTANG",
+  "versionLabel": "VERSI",
+  "authorLabel": "DIBUAT OLEH",
+  "kaabaLabel": "REFERENSI KA'BAH"
+}

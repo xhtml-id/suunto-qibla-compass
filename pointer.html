@@ -1,0 +1,182 @@
+<uiView
+  onLoad="
+    var statusSubscription;
+    var headingSubscription;
+    var gpsSubscription;
+    var bearingSubscription;
+
+    // Latest app outputs, combined into one status line and one guidance line
+    var statusCode = 0;
+    var gpsReadiness = 0;
+    var qiblaBearing = null;
+    var relativeBearing = null;
+    var aligned = 0;
+    var ALIGN_TOLERANCE_DEGREES = 3;
+
+    // Arrow outline in a 256-unit box centred on the pivot (same shape as assets/qibla-arrow.svg)
+    var ARROW = [[0, -120], [78, 49], [0, 19], [-78, 49]];
+
+    // Draw the arrow on canvas: the watch clips rotated images, so the arrow is drawn point by point
+    function drawCompass(ctx) {
+      var cx = ctx.width / 2;
+      var cy = ctx.height / 2;
+      if (relativeBearing == null) {
+        return;
+      }
+
+      var s = ctx.width * 0.39 / 128; // Larger arrow than option 1: no ring or labels to fit
+      var a = relativeBearing * Math.PI / 180;
+      var sin = Math.sin(a);
+      var cos = Math.cos(a);
+      var color = aligned == 1 ? '#3FF07F' : '#FF3F64';
+
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      for (var i = 0; i < ARROW.length; i++) {
+        var x = ARROW[i][0] * s;
+        var y = ARROW[i][1] * s;
+        var px = cx + x * cos - y * sin;
+        var py = cy + x * sin + y * cos;
+        if (i == 0) {
+          ctx.moveTo(px, py);
+        } else {
+          ctx.lineTo(px, py);
+        }
+      }
+      ctx.closePath();
+      ctx.fill();
+
+      var hubX = cx - 38 * s * sin;
+      var hubY = cy + 38 * s * cos;
+      ctx.fillStyle = '#000000';
+      ctx.beginPath();
+      ctx.arc(hubX, hubY, 15 * s, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 5 * s;
+      ctx.beginPath();
+      ctx.arc(hubX, hubY, 15 * s, 0, 2 * Math.PI);
+      ctx.stroke();
+    }
+
+    // Screen writes are the costly part: only touch the display when a value actually changes
+    var shown = {};
+    var lastHeadingKey = null;
+    var setTextCached = function(id, text) {
+      if (shown[id] !== text) {
+        shown[id] = text;
+        setText(id, text);
+      }
+    };
+    var setColorCached = function(id, cssClass) {
+      var key = id + ':color';
+      if (shown[key] !== cssClass) {
+        shown[key] = cssClass;
+        setStyle(id, 'color', getStyle(cssClass, 'color'));
+      }
+    };
+    // main.js evaluate() runs about once per second, so the arrow follows the compass sensor directly
+    var updateHeading = function(headingRad) {
+      if (statusCode != 2 || qiblaBearing == null || headingRad == null) {
+        if (lastHeadingKey !== 'none') {
+          lastHeadingKey = 'none';
+          relativeBearing = null;
+          control('#compass', 'REFRESH');
+        }
+        render();
+        return;
+      }
+      var heading = headingRad * 180 / Math.PI;
+      var rel = (qiblaBearing - heading) % 360;
+      rel = rel < 0 ? rel + 360 : rel;
+      var error = rel <= 180 ? rel : 360 - rel;
+      var nowAligned = error <= ALIGN_TOLERANCE_DEGREES ? 1 : 0;
+      // Alignment is always judged on the exact value; only redraws within half a degree are skipped
+      var key = Math.round(heading * 2) + '/' + qiblaBearing + '/' + nowAligned;
+      if (key === lastHeadingKey) {
+        return;
+      }
+      lastHeadingKey = key;
+      relativeBearing = rel;
+      aligned = nowAligned;
+      control('#compass', 'REFRESH');
+      render();
+    };
+
+    var render = function() {
+      if (statusCode == 1) {
+        setColorCached('#turn-text', 'css:.cm-bg');
+        setTextCached('#status-text', '{{statusCompass}}');
+        setTextCached('#turn-text', '{{calibrate}}');
+      } else if (statusCode == 2 && qiblaBearing != null && relativeBearing != null) {
+        setTextCached('#status-text', '{{appName}} ' + Math.round(qiblaBearing) + '°');
+        setColorCached('#turn-text', aligned == 1 ? 'css:.c-green' : 'css:.cm-bg');
+        if (aligned == 1) {
+          setTextCached('#turn-text', '{{aligned}}');
+        } else if (relativeBearing <= 180) {
+          setTextCached('#turn-text', Math.round(relativeBearing) + '° {{turnRight}}');
+        } else {
+          setTextCached('#turn-text', Math.round(360 - relativeBearing) + '° {{turnLeft}}');
+        }
+      } else {
+        setColorCached('#turn-text', 'css:.cm-bg');
+        setTextCached('#status-text', '{{statusGps}} ' + (gpsReadiness == null ? 0 : gpsReadiness) + '%');
+        setTextCached('#turn-text', '{{goOutside}}');
+      }
+    };
+  "
+  onActivate="
+    shown = {};
+    lastHeadingKey = null;
+    render();
+
+    headingSubscription = $.subscribe('/Fusion/Compass/Heading', function(v) {
+      updateHeading(typeof v === 'number' ? v : null);
+    }, false);
+
+    statusSubscription = $.subscribe('/Zapp/{zapp_index}/Output/statusCode', function(v) {
+      statusCode = v;
+      if (v != 2) {
+        updateHeading(null);
+      }
+      render();
+    }, false);
+
+    gpsSubscription = $.subscribe('/Zapp/{zapp_index}/Output/gpsReadiness', function(v) {
+      gpsReadiness = v;
+      render();
+    }, false);
+
+    bearingSubscription = $.subscribe('/Zapp/{zapp_index}/Output/qiblaBearing', function(v) {
+      qiblaBearing = v;
+      render();
+    }, false);
+  "
+  onDeactivate="
+    $.unsubscribe(headingSubscription);
+    $.unsubscribe(statusSubscription);
+    $.unsubscribe(gpsSubscription);
+    $.unsubscribe(bearingSubscription);
+  ">
+
+  <div id="suuntoplus">
+    <div id="status-text" class="sp-b-s p-hc cm-mid" style="top:calc(7% - 50%e);">{{statusGps}}</div>
+
+    <!-- Option 2: arrow only, drawn on canvas -->
+    <object id="compass" type="canvas" build="ctx => drawCompass(ctx)" style="position:absolute;left:14%;top:12%;width:72%;height:72%;" />
+
+    <!-- Watch forward marker: turn until the arrow points here -->
+    <div style="position:absolute;left:calc(50% - 50%e);top:11%;width:1.4%;height:4%;background-color:#FFFFFF;"></div>
+
+    <div id="turn-text" class="sp-b-s p-hc" style="top:calc(86% - 50%e);">{{holdLevel}}</div>
+
+    <!-- Lower button opens the about screen (compass screen leads here) -->
+    <div class="btn btn-btm">
+      <img class="cm-bgc icon" src="hint-btn-bottom.png" />
+    </div>
+
+    <userInput>
+      <pushButton name="down" onClick="$.put('/Zapp/{zapp_index}/Event', 3, null, 'int32');" />
+    </userInput>
+  </div>
+</uiView>
